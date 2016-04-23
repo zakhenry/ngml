@@ -19,7 +19,8 @@ A more concise alternative to HTML, compatible with plain HTML and angular templ
     ] {
         child-tag(Content {{interpolated}});
         /*! 
-            output block comment 
+            block comment
+            output to html
         */
     }
 ```
@@ -36,7 +37,10 @@ A more concise alternative to HTML, compatible with plain HTML and angular templ
     [(twoway)]="twowaybinding" 
     *template="expression">
         <child-tag>Content {{interpolated}}</child-tag>
-        <!-- output block comment -->
+        <!-- 
+            block comment
+            output to html
+        -->
 </tag>
 ```
 
