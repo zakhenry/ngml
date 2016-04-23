@@ -75,17 +75,17 @@ ngml:
 
 ```
     input.searchbar-input[
-        @value:value 
-        &input:inputChanged($event) 
-        &blur:inputBlurred() 
-        &focus:inputFocused() 
-        class:searchbar-input 
-        type:search 
-        @attr.placeholder:placeholder 
-        autocomplete:off 
-        autocorrect:off 
-        autocapitalize:off 
-        spellcheck:false
+        @value:value,
+        &input:inputChanged($event),
+        &blur:inputBlurred(),
+        &focus:inputFocused(), 
+        class:searchbar-input,
+        type:search,
+        @attr.placeholder:placeholder,
+        autocomplete:off,
+        autocorrect:off,
+        autocapitalize:off,
+        spellcheck:false,
     ];
 ```
 
