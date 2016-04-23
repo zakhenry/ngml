@@ -4,7 +4,7 @@ A more concise alternative to HTML, compatible with plain HTML and angular templ
 
 ## Example
 Here is an example in .html from the angular docs:
-
+```
     <!--html example-->
     <h4>Tabs Demo</h4>
     <ui-tabs>
@@ -21,9 +21,9 @@ Here is an example in .html from the angular docs:
     </ui-tabs>
     <hr>
     <button class="btn" (click)="addDetail()">Add Detail</button>
-
+```
 And here is the same example in .ngml
-
+```
     //ngml example
     h4(Tabs Demo);
     ui-tabs{
@@ -36,7 +36,7 @@ And here is the same example in .ngml
     }
     hr;
     button.btn[@click:addDetail()](Add Detail);
-    
+```
 ## Benefits
 * ngml is more compact (~80% smaller) which makes it easier to type and refactor
 * the simplicity makes it easier to read the important parts without the clutter of
@@ -49,12 +49,14 @@ Taking a (rather verbose) example from Ionic 2's code (https://github.com/drifty
 Single Line HTML
 
 
+```
     <input [value]="value" (input)="inputChanged($event)" (blur)="inputBlurred()" (focus)="inputFocused()" class="searchbar-input" type="search" [attr.placeholder]="placeholder" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+```
 
 
 Formatted HTML
 
-
+```
     <input 
         [value]="value" 
         (input)="inputChanged($event)" 
@@ -67,11 +69,11 @@ Formatted HTML
         autocorrect="off" 
         autocapitalize="off" 
         spellcheck="false">
-
+```
 
 ngml:
 
-
+```
     input.searchbar-input[
         @value:value 
         &input:inputChanged($event) 
@@ -85,7 +87,7 @@ ngml:
         autocapitalize:off 
         spellcheck:false
     ];
-
+```
 
 
 ## Todo
