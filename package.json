@@ -1,0 +1,25 @@
+{
+  "name": "ngml",
+  "version": "0.0.0",
+  "description": "Angular Markup Language",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiphiaz/ngml.git"
+  },
+  "keywords": [
+    "angular",
+    "markup",
+    "language",
+    "ngml"
+  ],
+  "author": "Zak Henry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiphiaz/ngml/issues"
+  },
+  "homepage": "https://github.com/xiphiaz/ngml#readme"
+}
