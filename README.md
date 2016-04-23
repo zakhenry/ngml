@@ -76,12 +76,18 @@ And here is the same example in .ngml
     button.btn[@click:addDetail()](Add Detail);
 ```
 ## Benefits
-* ngml is more compact (~80% smaller) which makes it easier to type and refactor
-* the simplicity makes it easier to read the important parts without the clutter of
- closing tags and quotation marks
-* Syntax style is c-like, largely based on less/sass which makes it easier to learn.
-* Abstraction of html allows for customisation of output eg `[title]="detail.title"` vs `bind-title="detail.title"`
-* cleaner multiline attributes. In angular you often end up with lots of attributes on the same line, and trying to make
+### Compact
+ngml ~80% smaller which makes it easier to type and refactor
+### Simple
+.ngml is easier to read the important parts without the clutter of closing tags and quotation marks
+### Familiar Syntax 
+Syntax style is c-like, largely based on less/sass which makes it immediately familiar to seasoned developers, and easier to learn for newcomers
+### Abstraction of html
+This allows for customisation of output eg `[title]="detail.title"` vs `bind-title="detail.title"`
+### Comments on attributes
+In html, comments within a tag are disallowed. With .ngml line comments are easy and intuitive as they follow familar css patterns
+###cleaner multiline attributes. 
+In angular you often end up with lots of attributes on the same line, and trying to make
  that readable can be a nightmare. 
 Taking a (rather verbose) example from Ionic 2's code (https://github.com/driftyco/ionic/blob/2.0/ionic/components/searchbar/searchbar.ts), which is more readable to you?
 Single Line HTML
