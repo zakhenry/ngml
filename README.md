@@ -2,14 +2,45 @@
 
 A more concise alternative to HTML, compatible with plain HTML and angular templates
 
-## Intro
+## Quick Reference
+
+### .ngml
 ```
-    tag#id.class[attr,attr:value,@bind:binding,&on:callback,=twoway:onbind,*template:expression](Content {{interpolated}}){
-        child-tag;
-    } //comment
+    /**
+     * Docblock
+     */
+    tag#id.class[
+        attr, //comment
+        attr:value,
+        @bind:binding,
+        &on:callback(),
+        =twoway:twowaybinding,
+        *template:expression
+    ] {
+        child-tag(Content {{interpolated}});
+        /*! 
+            output block comment 
+        */
+    }
 ```
 
-## Comparison
+### .html
+```
+<tag 
+    id="id" 
+    class="class" 
+    attr 
+    attr="value" 
+    [bind]="binding" 
+    (on)="callback()" 
+    [(twoway)]="twowaybinding" 
+    *template="expression">
+        <child-tag>Content {{interpolated}}</child-tag>
+        <!-- output block comment -->
+</tag>
+```
+
+## Real world comparison
 Here is an example in .html from the angular docs:
 ```
     <!--html example-->
