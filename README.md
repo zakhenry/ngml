@@ -2,7 +2,14 @@
 
 A more concise alternative to HTML, compatible with plain HTML and angular templates
 
-## Example
+## Intro
+```
+    tag#id.class[attr,attr:value,@bind:binding,&on:callback,=twoway:onbind,*template:expression](Content {{interpolated}}){
+        child-tag;
+    } //comment
+```
+
+## Comparison
 Here is an example in .html from the angular docs:
 ```
     <!--html example-->
@@ -89,6 +96,15 @@ ngml:
     ];
 ```
 
+Angular form demo
+```
+    form#login-form[&ngSubmit:onSubmit(), @ngFormModel=form]{
+        input[=ngModel:user.username, placeholder:Username];
+        input[=ngModel:user.password, placeholder:Password, type:password];
+        button[type:submit, @disabled:!form.valid](Save);
+    }
+    button#login[&login()](Login);
+```
 
 ## Todo
 * Compiler
