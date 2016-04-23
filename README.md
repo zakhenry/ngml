@@ -1,5 +1,7 @@
 # .ngml - Angular Markup Language
 
+[![Join the chat at https://gitter.im/xiphiaz/ngml](https://badges.gitter.im/xiphiaz/ngml.svg)](https://gitter.im/xiphiaz/ngml?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A more concise alternative to HTML, compatible with plain HTML and angular templates
 
 ## Quick Reference
