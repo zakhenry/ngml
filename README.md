@@ -83,7 +83,7 @@ And here is the same example in .ngml
 ```
 ## Benefits
 ### Compact
-ngml ~80% smaller which makes it easier to type and refactor
+ngml ~20% smaller which makes it easier to type and refactor
 ### Simple
 .ngml is easier to read the important parts without the clutter of closing tags and quotation marks
 ### Familiar Syntax 
