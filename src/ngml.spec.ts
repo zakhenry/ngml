@@ -1,4 +1,5 @@
 import {expect, NgmlParser} from "./testBootstrap.spec";
+import {HtmlParser, HtmlParseTreeResult} from '@angular/compiler/src/html_parser'
 
 describe('.ngml parser', () => {
 
@@ -9,8 +10,7 @@ describe('.ngml parser', () => {
 
   it('should have callable member parse', () => {
     const instance = new NgmlParser();
-    expect(instance.parse).to.be.an.instanceOf(Function);
-    expect(instance.parse()).to.be.true;
+    expect(instance.parse('<test>', 'test.ngml')).to.be.be.an.instanceOf(HtmlParseTreeResult);
   });
 
 });
