@@ -1,6 +1,10 @@
 # .ngml - Angular Markup Language
 
 [![Join the chat at https://gitter.im/xiphiaz/ngml](https://badges.gitter.im/xiphiaz/ngml.svg)](https://gitter.im/xiphiaz/ngml?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/xiphiaz/ngml.svg?branch=master)](https://travis-ci.org/xiphiaz/ngml) 
+[![Coverage Status](https://coveralls.io/repos/xiphiaz/ngml/badge.svg?branch=master)](https://coveralls.io/r/xiphiaz/ngml?branch=master)
+[![Dependency Status](https://gemnasium.com/xiphiaz/ngml.svg)](https://gemnasium.com/xiphiaz/ngml)
+[![npm version](https://badge.fury.io/js/ngml.svg)](http://badge.fury.io/js/ngml)
 
 A more concise alternative to HTML, compatible with plain HTML and angular templates
 

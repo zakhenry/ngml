@@ -2,10 +2,8 @@
   "name": "ngml",
   "version": "0.0.0",
   "description": "Angular Markup Language",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm test"
-  },
+  "main": "dist/ngml.js",
+  "typings": "dist/ngml.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xiphiaz/ngml.git"
@@ -21,5 +19,69 @@
   "bugs": {
     "url": "https://github.com/xiphiaz/ngml/issues"
   },
-  "homepage": "https://github.com/xiphiaz/ngml#readme"
+  "homepage": "https://github.com/xiphiaz/ngml#readme",
+  "scripts": {
+    "build": "gulp build",
+    "test": "karma start --NODE_ENV=test",
+    "preversion": "npm test",
+    "version": "npm run build && git add --all dist",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "dependencies": {
+    "lodash": "^4.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.0",
+    "babel-core": "6.4.5",
+    "babel-istanbul": "0.6.0",
+    "browser-sync": "2.11.1",
+    "browser-sync-webpack-plugin": "1.0.1",
+    "chance": "^1.0.1",
+    "compression-webpack-plugin": "0.3.0",
+    "del": "^1.2.0",
+    "event-stream": "^3.3.1",
+    "file-loader": "0.8.5",
+    "globby": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-bump": "^0.3.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-filter": "^2.0.2",
+    "gulp-help": "^1.6.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-tag-version": "^1.2.1",
+    "gulp-typescript": "^2.12.2",
+    "gulp-util": "^3.0.5",
+    "inquirer": "^0.8.5",
+    "istanbul": "^1.0.0-alpha.2",
+    "istanbul-instrumenter-loader": "0.1.3",
+    "karma": "0.13.22",
+    "karma-chai-plugins": "^0.7.0",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-coverage": "0.5.3",
+    "karma-mocha": "^0.2.2",
+    "karma-mocha-reporter": "^1.0.2",
+    "karma-phantomjs-launcher": "1.0.0",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-spec-reporter": "0.0.23",
+    "karma-typescript-preprocessor": "0.0.21",
+    "karma-webpack": "^1.7.0",
+    "lolex": "^1.4.0",
+    "merge2": "^0.3.6",
+    "minimatch": "^2.0.8",
+    "mocha": "^2.2.5",
+    "phantomjs": "^2.1.7",
+    "phantomjs-polyfill": "0.0.1",
+    "phantomjs-prebuilt": "2.1.3",
+    "raw-loader": "0.5.1",
+    "requirejs": "^2.1.18",
+    "run-sequence": "^1.1.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.12",
+    "url-loader": "0.5.7",
+    "wallaby-webpack": "0.0.11",
+    "webpack": "^1.12.14"
+  }
 }
